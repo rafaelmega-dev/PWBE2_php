@@ -1,10 +1,26 @@
-<h2>Editar Usuário</h2>
+<div class="form-wrapper">
+    <div class="form-card">
+        <h2 class="form-title">Editar Usuário</h2>
 
-<form method="post" action="index.php?acao=atualizar">
-    <input type="hidden" name="id" value="<?= $usuario['id'] ?>">
+        <form action="index.php?acao=atualizar" method="POST">
+            
+            <input type="hidden" name="id" value="<?= $usuario['id'] ?>">
 
-    Nome <input name="nome" value="<?= $usuario['nome'] ?>"><br><br>
-    E-mail <input name="email" value="<?= $usuario['email'] ?>"><br><br>
+            <div class="form-group">
+                <label class="form-label">Nome</label>
+                <input type="text" name="nome" class="form-input" value="<?= $usuario['nome'] ?>" required>
+            </div>
 
-    <button>Atualizar</button>
-</form>
+            <div class="form-group">
+                <label class="form-label">E-mail</label>
+                <input type="email" name="email" class="form-input" value="<?= $usuario['email'] ?>" required>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-primary">Atualizar</button>
+                <a href="index.php?acao=listar" class="btn-secondary">Cancelar</a>
+            </div>
+
+        </form>
+    </div>
+</div>
