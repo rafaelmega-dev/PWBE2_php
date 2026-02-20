@@ -1,5 +1,7 @@
+<link rel="stylesheet" href="styles.css">
+
 <h2>Novo Produto</h2>
-<form method="post" action="index.php?acao=salvar">
+<form method="post" action="index.php?acao_P=salvar_P">
 Nome: <input type="text" name="nome" required><br><br>
 Tipo: <input type= "text" name="tipo" required><br><br>
 Descrição:<br>
