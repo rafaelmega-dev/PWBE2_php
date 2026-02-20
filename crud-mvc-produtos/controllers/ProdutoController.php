@@ -17,7 +17,7 @@ $this->model->criar($nome,$email);
 header("Location: index.php");
 }
 public function editar($id){
-$usuario = $this->model->buscar($id);
+$produtos = $this->model->buscar($id);
 include 'views/Usuarioeditar.php';
 }
 public function atualizar($id,$nome,$email){
