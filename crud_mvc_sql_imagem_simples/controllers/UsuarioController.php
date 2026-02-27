@@ -49,7 +49,7 @@ if ($acao == 'editar') {
 }
 if ($acao == 'excluir') {
 
-    excluirUsuario($id);
+    excluirUsuario($_GET['id']);
     header("Location: index.php");
 }
     
